@@ -1,0 +1,19 @@
+generated: '2026-07-19'
+method: probed
+source: live probes of https://kik.com/.well-known/*
+host: https://kik.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  No .well-known discovery surface published on kik.com. Kik's former developer
+  surface (dev.kik.com, the Kik Bot Platform) is offline (TLS handshake fails),
+  so there is no live API host to probe.

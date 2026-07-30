@@ -1,8 +1,23 @@
 aid: kik
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kik.png
 name: Kik
-description: 'Kik is a company surfaced as a portfolio company of union-square-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: social-media. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Kik is a freeware instant-messaging mobile app for iOS and Android, known for letting
+  users register with only a username rather than a phone number. Founded in 2009 by University of
+  Waterloo students and released in 2010, Kik grew to hundreds of millions of registered users and was
+  especially popular with teens. It has been owned by MediaLab AI since 2019. Kik formerly operated a
+  developer surface — the Kik Bot Platform at dev.kik.com — and the Kin cryptocurrency, but that
+  developer/bot API platform is no longer online and Kik currently publishes no public API.'
 url: https://raw.githubusercontent.com/api-evangelist/kik/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Social Media
+- Messaging
+- Chat
+- Mobile
+- Bots
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +42,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kik-domain-security.yml
 - type: Website
   url: https://kik.com
+- type: PrivacyPolicy
+  url: https://kik.com/privacy
+- type: TermsOfService
+  url: https://kik.com/terms
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
